@@ -147,7 +147,12 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-
+    $('#Now').click(function(){
+     /*  alert(300) */
+/*       $(this).prevAll().css('background-color','pink');
+      $(this).nextAll().css('background-color','pink'); */
+      $(this).siblings().first().css('background-color','pink');
+    });
   </script>
 </body>
 
