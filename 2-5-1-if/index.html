@@ -16,7 +16,17 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
+		const money =10000000;
 
+		//$('#Money').text(money);
+		//$('#Money').html('<img src="https://git-scm.com/images/logo@2x.png">')
+		//$('#Money').html('<h1>'+ money +'</h1>')
+		$('#Money').html(`<h1>${money}</h1>`)//最新的寫法，IE不支援
+		if(money >= 10000000){
+			$('#Todo').text('去環遊世界吧');
+		}else{
+			$('#Todo').text('還是當社畜吧');			
+		}
 	</script>
 </body>
 
